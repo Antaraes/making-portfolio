@@ -64,7 +64,7 @@ const VideoSection: React.FC = () => {
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: "95% top",
+            end: "90% top",
             scrub: 0.5,
             pin: videoWrapper,
             pinSpacing: false,
