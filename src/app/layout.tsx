@@ -4,6 +4,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
 import { MainLayout } from "@/components/main-layout";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,7 +52,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Min Bhone Thant | Full Stack Developer",
-    description: "Full Stack Developer Portfolio – React, Next.js, Node.js, AWS, and more.",
+    description:
+      "Full Stack Developer Portfolio – React, Next.js, Node.js, AWS, and more.",
     images: ["/logo.png"],
     creator: "@yourhandle", // optional Twitter handle
   },
@@ -70,7 +72,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ScrollToTop />
         <MainLayout>{children}</MainLayout>
       </body>
       <GoogleAnalytics gaId="G-XYZ" />

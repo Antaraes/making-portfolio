@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "../Footer";
 import SkillsMarquee from "./SkillMarquee";
 import IntegratedHorizontalScroll from "./HorizontalScroll";
+import Work from "./Project";
+import Services from "./Services";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -172,10 +174,16 @@ const VideoSection: React.FC = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="relative h-auto overflow-hidden w-full">
+      <section
+        ref={sectionRef}
+        className="relative h-auto overflow-hidden w-full"
+      >
         {/* Video Section */}
         <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
-          <div ref={videoWrapperRef} className="relative w-full max-w-[1505px] h-[696px]">
+          <div
+            ref={videoWrapperRef}
+            className="relative w-full max-w-[1505px] h-[696px]"
+          >
             <video
               ref={videoRef}
               autoPlay
@@ -199,15 +207,22 @@ const VideoSection: React.FC = () => {
             >
               <div className="text-center text-white">
                 <h3 className="text-6xl font-bold mb-4">My Portfolio</h3>
-                <p className="text-xl opacity-80">Creative Development & Design</p>
+                <p className="text-xl opacity-80">
+                  Creative Development & Design
+                </p>
               </div>
             </div>
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-10">
               <div className="w-32 h-1 bg-white/20 rounded-full overflow-hidden">
-                <div ref={progressBarRef} className="h-full bg-white rounded-full" />
+                <div
+                  ref={progressBarRef}
+                  className="h-full bg-white rounded-full"
+                />
               </div>
-              <p className="text-sm mt-2 text-center opacity-60">Scroll to explore</p>
+              <p className="text-sm mt-2 text-center opacity-60">
+                Scroll to explore
+              </p>
             </div>
           </div>
         </div>
@@ -224,20 +239,15 @@ const VideoSection: React.FC = () => {
         <div ref={skillsRef} className="relative z-20 pb-20 bg-white">
           <SkillsMarquee />
         </div>
-        <Footer />
 
-        {/* Your other content */}
-        <div className="relative bg-gray-50">
-          <div className="container mx-auto px-8 py-20 relative z-10">
-            <div className="max-w-4xl">
-              <h2 className="text-8xl font-bold text-gray-900 mb-8">Work</h2>
-              <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
-                From beautiful marketing websites to fun, intuitive mobile applications, I love
-                crafting digital experiences that make people smile.
-              </p>
-            </div>
-          </div>
+        <div>
+          <Work />
         </div>
+        <div>
+          <Services />
+        </div>
+
+        <Footer />
       </section>
     </>
   );
