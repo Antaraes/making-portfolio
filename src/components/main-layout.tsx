@@ -2,6 +2,7 @@
 
 import { navItems } from "@/config/nav";
 import { SiteHeader } from "./site-header";
+import Footer from "./Footer";
 
 // import { SiteFooter } from "./site-footer";
 
@@ -15,6 +16,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       <SiteHeader items={navItems} />
       <main className="min-h-[calc(100vh-64px)]">{children}</main>
       {/* <SiteFooter /> */}
+      <Footer />
     </>
   );
 }

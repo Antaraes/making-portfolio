@@ -246,8 +246,6 @@ const VideoSection: React.FC = () => {
         <div>
           <Services />
         </div>
-
-        <Footer />
       </section>
     </>
   );
