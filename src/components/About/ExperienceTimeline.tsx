@@ -66,7 +66,7 @@ export default function ExperienceTimeline({
       <div
         className="absolute inset-0 z-0 opacity-5 pointer-events-none"
         style={{
-          backgroundImage: 'url("/code desktop.png")',
+          backgroundImage: 'url("/bagan.avif")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
