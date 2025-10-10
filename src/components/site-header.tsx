@@ -24,7 +24,7 @@ export function SiteHeader({ items }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b  backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b  backdrop-blur bg-white">
       <div className=" flex h-16 items-center justify-center">
         {/* Desktop nav */}
         <nav className=" gap-8 flex">

@@ -32,65 +32,102 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-12">
           <div>
-            <h4 className="font-semibold text-[--primary-foreground]">Explore</h4>
+            <h4 className="font-semibold text-[--primary-foreground]">
+              Explore
+            </h4>
             <ul className="footer-item space-y-2 mt-2">
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Work
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Playground
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Newsletter
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-[--primary-foreground]">Socials</h4>
+            <h4 className="font-semibold text-[--primary-foreground]">
+              Socials
+            </h4>
             <ul className="footer-item space-y-2 mt-2">
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Twitter
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[--muted-foreground] hover:text-[--foreground]">
+                <a
+                  href="#"
+                  className="text-[--muted-foreground] hover:text-[--foreground]"
+                >
                   Medium
                 </a>
               </li>

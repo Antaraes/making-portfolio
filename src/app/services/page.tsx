@@ -5,12 +5,7 @@ import { FC } from "react";
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
-  return (
-    <>
-      <IntegratedHorizontalScroll />
-      <Footer />
-    </>
-  );
+  return <></>;
 };
 
 export default page;
