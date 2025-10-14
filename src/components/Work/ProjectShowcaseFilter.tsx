@@ -32,11 +32,11 @@ interface Project {
 const SAMPLE_PROJECTS: Project[] = [
   {
     id: "1",
-    title: "Zesty Chat App",
+    title: "Chat Application",
     description: "Talk with strangers until the chat resets",
     category: "mobile",
-    skills: ["React Native", "Node.js", "Socket.io", "MongoDB"],
-    image: "/api/placeholder/400/600",
+    skills: ["Figma", "UI/UX", "Laravel", "Flutter"],
+    image: "/project/chat/showcase.png",
     color: "from-green-400 to-blue-500",
     links: {
       live: "https://zesty-app.com",
@@ -311,42 +311,13 @@ export default function PortfolioShowcase() {
               {/* Project Image */}
               <div
                 className={`relative h-64 bg-gradient-to-br ${project.color} p-6 flex items-center justify-center overflow-hidden`}
+                style={{
+                  backgroundImage: `url(${project.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
               >
                 <div className="absolute inset-0 bg-black/10"></div>
-                <div className="relative z-10 text-center">
-                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 mx-auto">
-                    {getCategoryIcon(project.category)}
-                  </div>
-                  <div className="text-white/90 text-sm font-medium capitalize">
-                    {project.category.replace("-", "/")}
-                  </div>
-                </div>
-
-                {/* Overlay with links */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex gap-3">
-                    {project.links?.live && (
-                      <a
-                        href={project.links.live}
-                        className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    )}
-                    {project.links?.github && (
-                      <a
-                        href={project.links.github}
-                        className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                </div>
               </div>
 
               {/* Project Info */}
@@ -354,9 +325,11 @@ export default function PortfolioShowcase() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                   {project.title}
                 </h3>
+
                 <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                   {project.description}
                 </p>
+                <div className="relative z-10 text-center"></div>
 
                 {/* Skills */}
                 <div className="flex flex-wrap gap-2">
