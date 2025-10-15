@@ -224,34 +224,6 @@ const serviceSections = [
       },
     ],
   },
-  {
-    category: "Specialized Solutions",
-    title: "E-commerce & IoT",
-    description:
-      "Building complete digital commerce platforms and Internet of Things solutions. From shopping carts to smart devices, delivering end-to-end technical solutions.",
-    subServices: [
-      {
-        title: "E-commerce Platforms",
-        description:
-          "Full-featured online stores with product catalogs, shopping carts, checkout flows, and order management.",
-      },
-      {
-        title: "Payment Integration",
-        description:
-          "Secure payment gateways, local banking integration (Wave Pay, KPay), and transaction processing.",
-      },
-      {
-        title: "IoT Development",
-        description:
-          "Smart device applications, hardware integration, sensor data processing, and real-time monitoring.",
-      },
-      {
-        title: "Data Analysis",
-        description:
-          "PowerBI dashboards, data visualization, analytics implementation, and actionable insights.",
-      },
-    ],
-  },
 ];
 
 export default function ServicesPage() {
