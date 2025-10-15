@@ -11,11 +11,13 @@ import {
   Code,
   Database,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // Types
 interface Project {
   id: string;
   title: string;
+  slug?: string;
   description: string;
   category: "mobile" | "website" | "desktop" | "ui-ux" | "product";
   skills: string[];
@@ -32,9 +34,10 @@ interface Project {
 const SAMPLE_PROJECTS: Project[] = [
   {
     id: "1",
+    slug: "chat-application",
     title: "Chat Application",
     description: "Talk with strangers until the chat resets",
-    category: "mobile",
+    category: "ui-ux",
     skills: ["Figma", "UI/UX", "Laravel", "Flutter"],
     image: "/project/chat/showcase.png",
     color: "from-green-400 to-blue-500",
@@ -45,11 +48,12 @@ const SAMPLE_PROJECTS: Project[] = [
   },
   {
     id: "2",
-    title: "Poesial Beauty",
-    description: "A new type of ecommerce for high-end beauty products",
-    category: "website",
-    skills: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    image: "/api/placeholder/600/400",
+    slug: "inventory-application",
+    title: "Inventory App",
+    description: "Warehouse inventory management and order tracking",
+    category: "ui-ux",
+    skills: ["Figma", "UI/UX", "Laravel", "Flutter"],
+    image: "/project/inventory/cover.png",
     color: "from-pink-300 to-orange-300",
     links: {
       live: "https://poesial.com",
@@ -186,6 +190,7 @@ export default function PortfolioShowcase() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [showFilters, setShowFilters] = useState(false);
+  const route = useRouter();
 
   const filteredProjects = useMemo(() => {
     return SAMPLE_PROJECTS.filter((project) => {
@@ -305,6 +310,7 @@ export default function PortfolioShowcase() {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
+              onClick={() => route.push(`/work/${project.slug}`)}
               className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
