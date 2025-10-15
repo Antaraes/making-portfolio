@@ -4,6 +4,73 @@ import IntroSection from "@/components/About/IntroSection";
 import SkillsSection from "@/components/About/SkillsSection";
 import ExperienceTimeline from "@/components/About/ExperienceTimeline";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me - Min Bhone Thant | Full Stack Developer & Designer",
+  description:
+    "Learn about Min Bhone Thant - Full Stack Developer and UI/UX Designer from Myanmar. Expert in React, Next.js, Python, Django, Flutter, and Figma. View my skills, experience, and professional journey in software development and design.",
+  keywords: [
+    "About Min Bhone Thant",
+    "Full Stack Developer Myanmar",
+    "UI/UX Designer Myanmar",
+    "Software Engineer",
+    "React Developer",
+    "Next.js Expert",
+    "Python Developer",
+    "Django Developer",
+    "Flutter Developer",
+    "Figma Designer",
+    "Web Development Skills",
+    "Mobile App Development",
+    "Design System Expert",
+    "Frontend Skills",
+    "Backend Skills",
+    "Developer Experience",
+  ],
+  authors: [{ name: "Min Bhone Thant" }],
+  creator: "Min Bhone Thant",
+  openGraph: {
+    title: "About Min Bhone Thant - Full Stack Developer & UI/UX Designer",
+    description:
+      "Full Stack Developer and UI/UX Designer from Myanmar. Expert in modern web technologies, mobile app development, and creating exceptional user experiences.",
+    url: "https://minbhonethant.com/about",
+    siteName: "Min Bhone Thant Portfolio",
+    images: [
+      {
+        url: "/about-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Min Bhone Thant - Skills and Experience",
+      },
+    ],
+    locale: "en_US",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Min Bhone Thant - Full Stack Developer & UI/UX Designer",
+    description:
+      "Full Stack Developer and UI/UX Designer. Expert in React, Next.js, Python, Django, Flutter, and Figma.",
+    images: ["/about-og.jpg"],
+    creator: "@minbhonethant",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://minbhonethant.com/about",
+  },
+  category: "Profile",
+};
 
 const skillsData = {
   frontend: [

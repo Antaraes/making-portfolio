@@ -2,6 +2,75 @@ import React from "react";
 import ServicesHero from "@/components/Services/ServicesHero";
 import ServiceSections from "@/components/Services/ServiceSections";
 import CTASection from "@/components/Services/CTASection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services - Min Bhone Thant | Web Development & UI/UX Design Services",
+  description:
+    "Professional web development and UI/UX design services. Specializing in React, Next.js, Python, Django, mobile app development, design systems, e-commerce solutions, and cloud infrastructure. Get expert full-stack development and design services.",
+  keywords: [
+    "Web Development Services",
+    "UI/UX Design Services",
+    "React Development",
+    "Next.js Development",
+    "Python Development",
+    "Django Development",
+    "Mobile App Development",
+    "Flutter Development",
+    "React Native Development",
+    "Figma Design Services",
+    "Frontend Development Services",
+    "Backend Development Services",
+    "Full Stack Development",
+    "E-commerce Development",
+    "Design System Creation",
+    "Cloud Infrastructure",
+    "AWS Services",
+    "Min Bhone Thant",
+  ],
+  authors: [{ name: "Min Bhone Thant" }],
+  creator: "Min Bhone Thant",
+  openGraph: {
+    title: "Services - Professional Web Development & UI/UX Design",
+    description:
+      "Expert web development and UI/UX design services. React, Next.js, Python, Django, mobile apps, design systems, and more. Transform your ideas into reality.",
+    url: "https://minbhonethant.com/services",
+    siteName: "Min Bhone Thant Portfolio",
+    images: [
+      {
+        url: "/services-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Web Development and UI/UX Design Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services - Web Development & UI/UX Design",
+    description:
+      "Expert full-stack development and UI/UX design services. React, Next.js, Python, mobile apps, and more.",
+    images: ["/services-og.jpg"],
+    creator: "@minbhonethant",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://minbhonethant.com/services",
+  },
+  category: "Services",
+};
 
 // Organized services data based on CV - Fable & Co. style
 const serviceSections = [

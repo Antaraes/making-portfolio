@@ -61,6 +61,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "https://minbhonethant.com/work/chat-application",
+  },
+  category: "Portfolio",
   verification: {
     google: "your-google-verification-code",
   },
