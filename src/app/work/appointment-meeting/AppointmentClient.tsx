@@ -37,7 +37,7 @@ const AppointmentMeeting = () => {
     { name: "Ye Yint Myint Myat", role: "Frontend Developer" },
     { name: "Shine Wai Tun", role: "Backend Developer" },
     { name: "Hpone Myat Thu", role: "Frontend Developer" },
-    { name: "Min Bhone Thant", role: "Full Stack Developer & UI Lead" },
+    { name: "Min Bhone Thant", role: "Full Stack Developer" },
   ];
 
   return (
@@ -112,8 +112,8 @@ const AppointmentMeeting = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A collaborative full-stack appointment scheduling platform built with
-            emphasis on functionality, teamwork, and code excellence
+            A collaborative full-stack appointment scheduling platform built
+            with emphasis on functionality, teamwork, and code excellence
           </p>
         </div>
 
@@ -191,12 +191,15 @@ const AppointmentMeeting = () => {
                   Developed an Appointment Meeting application with a strong
                   emphasis on functionality and fostering a collaborative team
                   environment. I made backend and frontend structures of project
-                  flows for full-stack app, working alongside a dedicated team of
-                  six members.
+                  flows for full-stack app, working alongside a dedicated team
+                  of six members.
                 </p>
               </div>
 
-              <div ref={addToRefs} className="section-fade grid grid-cols-2 gap-8">
+              <div
+                ref={addToRefs}
+                className="section-fade grid grid-cols-2 gap-8"
+              >
                 <div>
                   <h4 className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                     My Role
@@ -287,9 +290,9 @@ const AppointmentMeeting = () => {
                   Backend Architecture
                 </h3>
                 <p className="text-gray-400 leading-relaxed mb-4">
-                  Built with Node.js and TypeScript, emphasizing code reusability
-                  and performance optimization through robust dependency injection
-                  and inversion techniques.
+                  Built with Node.js and TypeScript, emphasizing code
+                  reusability and performance optimization through robust
+                  dependency injection and inversion techniques.
                 </p>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-start gap-3">
@@ -326,10 +329,7 @@ const AppointmentMeeting = () => {
       {/* Key Features */}
       <section className="py-24 md:py-32 border-t border-gray-900">
         <div className="max-w-[1600px] mx-auto px-8 md:px-16">
-          <div
-            ref={addToRefs}
-            className="section-fade text-center mb-16"
-          >
+          <div ref={addToRefs} className="section-fade text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Core <span style={{ color: "#242b3a" }}>Features</span>
             </h2>
@@ -358,12 +358,10 @@ const AppointmentMeeting = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">
-                Smart Scheduling
-              </h3>
+              <h3 className="text-xl font-bold mb-3">Smart Scheduling</h3>
               <p className="text-gray-400 leading-relaxed">
-                Intelligent appointment booking system with conflict detection and
-                availability management
+                Intelligent appointment booking system with conflict detection
+                and availability management
               </p>
             </div>
 
@@ -383,9 +381,7 @@ const AppointmentMeeting = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">
-                Team Collaboration
-              </h3>
+              <h3 className="text-xl font-bold mb-3">Team Collaboration</h3>
               <p className="text-gray-400 leading-relaxed">
                 Built for teamwork with shared calendars, meeting coordination,
                 and collaborative scheduling
@@ -412,8 +408,8 @@ const AppointmentMeeting = () => {
                 Real-time Notifications
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Instant updates for appointments, reminders, and schedule changes
-                across the platform
+                Instant updates for appointments, reminders, and schedule
+                changes across the platform
               </p>
             </div>
           </div>
@@ -496,16 +492,14 @@ const AppointmentMeeting = () => {
       {/* Team Contributors */}
       <section className="py-24 md:py-32 border-t border-gray-900">
         <div className="max-w-[1600px] mx-auto px-8 md:px-16">
-          <div
-            ref={addToRefs}
-            className="section-fade text-center mb-16"
-          >
+          <div ref={addToRefs} className="section-fade text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Amazing <span style={{ color: "#242b3a" }}>Team</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               This project was made possible by our dedicated team of six
-              developers, prioritizing community and teamwork over UI intricacies
+              developers, prioritizing community and teamwork over UI
+              intricacies
             </p>
           </div>
 
@@ -568,8 +562,8 @@ const AppointmentMeeting = () => {
                 </div>
                 <div className="border-l-2 border-[#242b3a] pl-6">
                   <p className="text-lg text-gray-300">
-                    Actively engaged with team of six, prioritizing community and
-                    teamwork throughout development
+                    Actively engaged with team of six, prioritizing community
+                    and teamwork throughout development
                   </p>
                 </div>
               </div>
@@ -628,7 +622,10 @@ const AppointmentMeeting = () => {
       {/* Closing Statement */}
       <section className="py-32 md:py-48 border-t border-gray-900">
         <div className="max-w-[1600px] mx-auto px-8 md:px-16">
-          <div ref={addToRefs} className="section-fade max-w-4xl mx-auto space-y-12 text-center">
+          <div
+            ref={addToRefs}
+            className="section-fade max-w-4xl mx-auto space-y-12 text-center"
+          >
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
               Built with teamwork,
               <br />

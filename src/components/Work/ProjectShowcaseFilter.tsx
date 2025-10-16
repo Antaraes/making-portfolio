@@ -89,6 +89,20 @@ const SAMPLE_PROJECTS: Project[] = [
     },
   },
   {
+    id: "11",
+    slug: "appointment-meeting",
+    title: "Meeting Appointment System",
+    description:
+      "Collaborative appointment scheduling platform with team-based functionality and smart scheduling",
+    category: "website",
+    skills: ["Next.js", "Node.js", "TypeScript", "PostgreSQL", "TypeORM"],
+    image: "/images/appointment/meetingappoinment.png",
+    color: "from-slate-600 to-slate-800",
+    links: {
+      github: "https://github.com/Antaraes/meeting_appointment_ui",
+    },
+  },
+  {
     id: "3",
     title: "Task Manager Pro",
     description: "Advanced project management with team collaboration",
