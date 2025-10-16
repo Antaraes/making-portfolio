@@ -193,10 +193,7 @@ const VideoSection: React.FC = () => {
               preload="auto"
               className="w-full h-full object-cover"
             >
-              <source
-                src="https://vbportfolio.nyc3.cdn.digitaloceanspaces.com/vbreel2025.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/timeline.mp4" type="video/mp4" />
             </video>
 
             <div className="overlay absolute inset-0 bg-black pointer-events-none" />
