@@ -240,7 +240,7 @@ const InventoryPortfolio = () => {
           >
             <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-br from-[#2CC4EF]/20 via-[#5DD4F5]/20 to-[#B2EEFF]/20 p-8 md:p-16">
               <img
-                src="/project/inventory/cover.png"
+                src="/project/inventory/Cover.png"
                 alt="Inventory App Screenboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

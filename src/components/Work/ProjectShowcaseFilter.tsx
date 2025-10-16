@@ -53,7 +53,7 @@ const SAMPLE_PROJECTS: Project[] = [
     description: "Warehouse inventory management and order tracking",
     category: "ui-ux",
     skills: ["Figma", "UI/UX", "Laravel", "Flutter"],
-    image: "/project/inventory/cover.png",
+    image: "/project/inventory/Cover.png",
     color: "from-pink-300 to-orange-300",
     links: {
       live: "https://poesial.com",
