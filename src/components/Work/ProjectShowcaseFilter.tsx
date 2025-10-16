@@ -61,6 +61,34 @@ const SAMPLE_PROJECTS: Project[] = [
     },
   },
   {
+    id: "9",
+    slug: "property-management",
+    title: "Property Management System",
+    description:
+      "Enterprise real estate platform with CRM, lead tracking, and multi-tenant architecture",
+    category: "website",
+    skills: ["Next.js", "TypeScript", "tRPC", "Prisma", "PostgreSQL"],
+    image: "/project/property/Thumbnail.png",
+    color: "from-emerald-400 to-teal-500",
+    links: {
+      github: "https://github.com/username/property-management",
+    },
+  },
+  {
+    id: "10",
+    slug: "good-writes-ai",
+    title: "Good Writes AI",
+    description:
+      "AI-powered academic research platform with intelligent document analysis and collaboration",
+    category: "product",
+    skills: ["Next.js", "NestJS", "Python", "MongoDB", "AWS"],
+    image: "/project/research-paper/research-paper.png",
+    color: "from-purple-500 to-indigo-600",
+    links: {
+      github: "https://github.com/username/good-writes-ai",
+    },
+  },
+  {
     id: "3",
     title: "Task Manager Pro",
     description: "Advanced project management with team collaboration",
@@ -311,7 +339,7 @@ export default function PortfolioShowcase() {
             <div
               key={project.id}
               onClick={() => route.push(`/work/${project.slug}`)}
-              className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
+              className="group bg-white rounded-3xl overflow-hidden shadow-sm cursor-pointer hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Project Image */}
